@@ -64,3 +64,28 @@ Route22_Text_LeagueGateSign::
 	.string "POKéMON LEAGUE\n"
 	.string "Front Gate$"
 
+Route22_Text_TestHeptaNoIntro::
+    .string "Tyrone: {PLAYER}...\p"
+    .string "Estas por presenciar un sustito.\p"
+    .string "Algo chiquitico, no tan impresionante.\p"
+    .string "Espero estes listo.$"
+
+Route22_Text_TestHeptaNoDefeat::
+    .string "No... imposible.$"
+
+Route22_Text_TestHeptanoBeaten::
+	.string "Jaja, reinicia o crea otro archivo.$"
+
+Route22_Text_TestHeptaNoAfter::
+    .string "Esto fue solo una prueba.\p"
+    .string "Ya veremos qué sigue, espera noticias.$"
+
+Route22_Text_ObtainedAnHeptaNo::
+    .string "{PLAYER} obtained an HEPTANO!$"
+
+Route22_Text_ObtainedAnMalwaragon::
+    .string "{PLAYER} obtained an MALWARAGON!$"
+
+Route22_Text_TestSign::
+	.string "Ingresa a la cueva para acceder\n"
+	.string "al TestBuild ;)$"

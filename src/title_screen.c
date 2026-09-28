@@ -1,6 +1,7 @@
 #include "global.h"
 #include "gflib.h"
 #include "task.h"
+#include "menu.h"
 #include "new_menu_helpers.h"
 #include "m4a.h"
 #include "scanline_effect.h"
@@ -16,6 +17,7 @@
 #include "berry_fix_program.h"
 #include "decompress.h"
 #include "constants/songs.h"
+#include "window.h"
 
 enum TitleScreenScene
 {

@@ -5030,4 +5030,30 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 337,
         .trainerOffset = 2,
     },
+
+    [NATIONAL_DEX_HEPTANO] =
+    {
+        .categoryName = _("HYPNOSIS"),
+        .height = 16,
+        .weight = 756,
+        .description = gHeptaNoPokedexText,
+        .unusedDescription = gHeptaNoPokedexTextUnused,
+        .pokemonScale = 298,
+        .pokemonOffset = 3,
+        .trainerScale = 310,
+        .trainerOffset = 2,
+    },
+
+    [NATIONAL_DEX_MALWARAGON] =
+    {
+        .categoryName = _("VIRTUAL"),
+        .height = 6,
+        .weight = 325,
+        .description = gMalwaragonPokedexText,
+        .unusedDescription = gMalwaragonPokedexTextUnused,
+        .pokemonScale = 320,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = -2,
+    },
 };

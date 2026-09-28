@@ -2718,3 +2718,17 @@ const u8 gDeoxysPokedexText[] = _(
     "altering its appearance.");
 
 const u8 gDeoxysPokedexTextUnused[] = _("");
+
+const u8 gHeptaNoPokedexText[] = _(
+    "This strange and creepy POKéMON\n"
+    "evolved by unkown methods and\n"
+    "has a mysterious aura surrounding it.");
+
+const u8 gHeptaNoPokedexTextUnused[] = _("");
+
+const u8 gMalwaragonPokedexText[] = _(
+    "Through an alterated Upgrade,\n"
+    "a Porygon2 into this dangerous\n"
+    "artificial variant, it is said to be\n");
+
+const u8 gMalwaragonPokedexTextUnused[] = _("");

@@ -384,8 +384,9 @@
 #define STRINGID_TRAINER1WINTEXT 383
 #define STRINGID_TRAINER1MON2COMEBACK 384
 #define STRINGID_TRAINER1MON1AND2COMEBACK 385
+#define STRINGID_REPLACESET 386
 
-#define BATTLESTRINGS_COUNT     386
+#define BATTLESTRINGS_COUNT     387
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -472,6 +473,12 @@
 // gRestUsedStringIds
 #define B_MSG_REST           0
 #define B_MSG_REST_STATUSED  1
+
+// gForceSleepStringIds
+#define B_MSG_FORCED_SLEEP 0
+
+// gReplaceSetStringIds
+#define B_MSG_REPLACE_SET 0
 
 // gWokeUpStringIds
 #define B_MSG_WOKE_UP        0

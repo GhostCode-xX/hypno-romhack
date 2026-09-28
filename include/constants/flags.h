@@ -188,6 +188,10 @@
 #define FLAG_HIDE_LORELEIS_HOUSE_LAPRAS_DOLL               0x0AC
 #define FLAG_HIDE_MISC_KANTO_ROCKETS                       0x0AD
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
+#define FLAG_HIDE_HEPTANO_BALL_1                           0x0AF
+#define FLAG_HIDE_MALWARAGON_BALL_1                        0x0B0
+#define FLAG_HIDE_HEPTANO_BALL_2                           0x0B1
+#define FLAG_HIDE_MALWARAGON_BALL_2                        0x0B2
 
 // Unused?
 #define FLAG_0x0AF               0x0AF
@@ -1460,6 +1464,10 @@
 #define FLAG_WORLD_MAP_THREE_ISLAND_DUNSPARCE_TUNNEL                (SYS_FLAGS + 0xC0)
 #define FLAG_WORLD_MAP_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY       (SYS_FLAGS + 0xC1)
 #define FLAG_WORLD_MAP_BIRTH_ISLAND_EXTERIOR                        (SYS_FLAGS + 0xC2)
+
+#define FLAG_BEAT_HEPTANO_TEST                                      (SYS_FLAGS + 0xC3)
+#define FLAG_GOT_HEPTANO                                            (SYS_FLAGS + 0xC4)
+#define FLAG_GOT_MALWARAGON                                        (SYS_FLAGS + 0xC5)
 
 #define FLAG_0x8C3                                                  (SYS_FLAGS + 0xC3)
 #define FLAG_0x8C4                                                  (SYS_FLAGS + 0xC4)

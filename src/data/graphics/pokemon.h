@@ -2831,3 +2831,17 @@ const u8 gMonIcon_UnownExclamationMark[] = INCBIN_U8("graphics/pokemon/unown/exc
 const u32 gMonFrontPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/question_mark/front.4bpp.lz");
 const u32 gMonBackPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/question_mark/back.4bpp.lz");
 const u8 gMonIcon_UnownQuestionMark[] = INCBIN_U8("graphics/pokemon/unown/question_mark/icon.4bpp");
+
+const u32 gMonFrontPic_HeptaNo[] = INCBIN_U32("graphics/pokemon/heptano/front.4bpp.lz");
+const u32 gMonPalette_HeptaNo[] = INCBIN_U32("graphics/pokemon/heptano/normal.gbapal.lz");
+const u32 gMonBackPic_HeptaNo[] = INCBIN_U32("graphics/pokemon/heptano/back.4bpp.lz");
+const u32 gMonShinyPalette_HeptaNo[] = INCBIN_U32("graphics/pokemon/heptano/shiny.gbapal.lz");
+const u8 gMonIcon_HeptaNo[] = INCBIN_U8("graphics/pokemon/heptano/icon.4bpp");
+const u8 gMonFootprint_HeptaNo[] = INCBIN_U8("graphics/pokemon/heptano/footprint.1bpp");
+
+const u32 gMonFrontPic_Malwaragon[] = INCBIN_U32("graphics/pokemon/malwaragon/front.4bpp.lz");
+const u32 gMonPalette_Malwaragon[] = INCBIN_U32("graphics/pokemon/malwaragon/normal.gbapal.lz");
+const u32 gMonBackPic_Malwaragon[] = INCBIN_U32("graphics/pokemon/malwaragon/back.4bpp.lz");
+const u32 gMonShinyPalette_Malwaragon[] = INCBIN_U32("graphics/pokemon/malwaragon/shiny.gbapal.lz");
+const u8 gMonIcon_Malwaragon[] = INCBIN_U8("graphics/pokemon/malwaragon/icon.4bpp");
+const u8 gMonFootprint_Malwaragon[] = INCBIN_U8("graphics/pokemon/malwaragon/footprint.1bpp");

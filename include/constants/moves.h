@@ -356,8 +356,9 @@
 #define MOVE_WATER_PULSE 352
 #define MOVE_DOOM_DESIRE 353
 #define MOVE_PSYCHO_BOOST 354
-
-#define MOVES_COUNT 355
+#define MOVE_HYPNORUZATION 355
+#define MOVE_CLONETA 356
+#define MOVES_COUNT 358
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

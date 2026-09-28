@@ -4614,4 +4614,30 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
+
+    [MOVE_HYPNORUZATION] =
+    {
+        .effect = EFFECT_HYPNORUZATION,
+        .power = 100,
+        .type = TYPE_PSYCHIC,
+        .accuracy = 0,
+        .pp = 20,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 3,
+        .flags = 0,
+    },
+
+    [MOVE_CLONETA] =
+    {
+        .effect = EFFECT_CLONETA,
+        .power = 80,
+        .type = TYPE_STEEL,
+        .accuracy = 0,
+        .pp = 10,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 3,
+        .flags = 0,
+    }
 };

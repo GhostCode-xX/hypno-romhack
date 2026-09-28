@@ -728,6 +728,16 @@
 	.4byte \param0
 	.endm
 
+	.macro forcedsleep ptr:req
+	.byte 0xf8
+	.4byte \ptr
+	.endm
+
+	.macro replaceset ptr:req
+	.byte 0xf9
+	.4byte \ptr
+	.endm
+
 	.macro stockpile
 	.byte 0x85
 	.endm

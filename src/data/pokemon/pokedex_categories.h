@@ -81,6 +81,7 @@ static const u16 sDexCategory_GrasslandPkmn_Page13[] = {
 static const u16 sDexCategory_GrasslandPkmn_Page14[] = {
     SPECIES_DROWZEE,
     SPECIES_HYPNO,
+    SPECIES_HEPTANO,
     SPECIES_GULPIN,
     SPECIES_SWALOT,
 };
@@ -761,6 +762,7 @@ static const u16 sDexCategory_UrbanPkmn_Page9[] = {
     SPECIES_ELECTRODE,
     SPECIES_PORYGON,
     SPECIES_PORYGON2,
+    SPECIES_MALWARAGON,
 };
 
 static const u16 sDexCategory_UrbanPkmn_Page10[] = {

@@ -692,6 +692,10 @@ Cry_Hypno::
 	.incbin "sound/direct_sound_samples/cries/hypno.bin"
 
 	.align 2
+Cry_Heptano::
+	.incbin "sound/direct_sound_samples/cries/hypno.bin"
+
+	.align 2
 Cry_Krabby::
 	.incbin "sound/direct_sound_samples/cries/krabby.bin"
 
@@ -1233,6 +1237,10 @@ Cry_Donphan::
 
 	.align 2
 Cry_Porygon2::
+	.incbin "sound/direct_sound_samples/cries/porygon2.bin"
+
+	.align 2
+Cry_Malwaragon::
 	.incbin "sound/direct_sound_samples/cries/porygon2.bin"
 
 	.align 2

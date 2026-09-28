@@ -716,6 +716,18 @@ static const u16 sTutorLearnsets[] =
                     | TUTOR(MOVE_THUNDER_WAVE)
                     | TUTOR(MOVE_SUBSTITUTE),
 
+    [SPECIES_HEPTANO] = TUTOR(MOVE_MEGA_PUNCH)
+                    | TUTOR(MOVE_MEGA_KICK)
+                    | TUTOR(MOVE_BODY_SLAM)
+                    | TUTOR(MOVE_DOUBLE_EDGE)
+                    | TUTOR(MOVE_COUNTER)
+                    | TUTOR(MOVE_SEISMIC_TOSS)
+                    | TUTOR(MOVE_MIMIC)
+                    | TUTOR(MOVE_METRONOME)
+                    | TUTOR(MOVE_DREAM_EATER)
+                    | TUTOR(MOVE_THUNDER_WAVE)
+                    | TUTOR(MOVE_SUBSTITUTE),
+
     [SPECIES_KRABBY] = TUTOR(MOVE_SWORDS_DANCE)
                      | TUTOR(MOVE_BODY_SLAM)
                      | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1683,6 +1695,12 @@ static const u16 sTutorLearnsets[] =
                       | TUTOR(MOVE_SUBSTITUTE),
 
     [SPECIES_PORYGON2] = TUTOR(MOVE_DOUBLE_EDGE)
+                       | TUTOR(MOVE_MIMIC)
+                       | TUTOR(MOVE_DREAM_EATER)
+                       | TUTOR(MOVE_THUNDER_WAVE)
+                       | TUTOR(MOVE_SUBSTITUTE),
+
+    [SPECIES_MALWARAGON] = TUTOR(MOVE_DOUBLE_EDGE)
                        | TUTOR(MOVE_MIMIC)
                        | TUTOR(MOVE_DREAM_EATER)
                        | TUTOR(MOVE_THUNDER_WAVE)

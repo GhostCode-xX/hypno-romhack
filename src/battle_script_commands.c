@@ -309,6 +309,9 @@ static void Cmd_removeattackerstatus1(void);
 static void Cmd_finishaction(void);
 static void Cmd_finishturn(void);
 
+static void Cmd_forcedsleep(void);
+static void Cmd_replaceset(void);
+
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
     Cmd_attackcanceler,                          //0x0
@@ -559,6 +562,8 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_removeattackerstatus1,                   //0xF5
     Cmd_finishaction,                            //0xF6
     Cmd_finishturn,                              //0xF7
+    Cmd_forcedsleep,                             //0xF8
+    Cmd_replaceset,                              //0xF9
 };
 
 struct StatFractions
@@ -6501,6 +6506,28 @@ static void Cmd_trysetrest(void)
     }
 }
 
+static void Cmd_forcedsleep(void)
+{
+    const u8 *failJump = T1_READ_PTR(gBattlescriptCurrInstr + 1);
+
+    if (gBattleMons[gBattlerTarget].hp == 0)
+    {
+        gBattlescriptCurrInstr = failJump;
+    }
+    else
+    {
+        gEffectBattler = gBattlerTarget;
+        gBattleMons[gBattlerTarget].status1 = STATUS1_SLEEP_TURN((Random() & 3) + 2);
+        gActiveBattler = gBattlerTarget;
+        BtlController_EmitSetMonData(BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].status1), &gBattleMons[gBattlerTarget].status1);
+        MarkBattlerForControllerExec(gActiveBattler);
+
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUSED;
+        BattleScriptPush(gBattlescriptCurrInstr + 5);
+        gBattlescriptCurrInstr = BattleScript_MoveEffectSleep;
+    }
+}
+
 static void Cmd_jumpifnotfirstturn(void)
 {
     const u8 *failJump = T1_READ_PTR(gBattlescriptCurrInstr + 1);
@@ -7437,6 +7464,36 @@ static void Cmd_transformdataexecution(void)
         MarkBattlerForControllerExec(gActiveBattler);
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
     }
+}
+
+static void Cmd_replaceset(void)
+{
+    s32 i;
+    u8 *battleMonAttacker, *battleMonTarget;
+
+    gDisableStructs[gBattlerAttacker].mimickedMoves = 0;
+
+    PREPARE_SPECIES_BUFFER(gBattleTextBuff1, gBattleMons[gBattlerTarget].species)
+
+    battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
+    battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        gBattleMons[gBattlerAttacker].moves[i] = gBattleMons[gBattlerTarget].moves[i];
+
+        if (gBattleMoves[gBattleMons[gBattlerAttacker].moves[i]].pp < 5)
+            gBattleMons[gBattlerAttacker].pp[i] = gBattleMoves[gBattleMons[gBattlerAttacker].moves[i]].pp;
+        else
+            gBattleMons[gBattlerAttacker].pp[i] = 5;
+    }
+
+    gActiveBattler = gBattlerAttacker;
+    BtlController_EmitResetActionMoveSelection(BUFFER_A, RESET_MOVE_SELECTION);
+    MarkBattlerForControllerExec(gActiveBattler);
+    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_REPLACE_SET;
+
+    gBattlescriptCurrInstr += 5;
 }
 
 static void Cmd_setsubstitute(void)

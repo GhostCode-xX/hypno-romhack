@@ -2200,4 +2200,14 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(24, 40),
         .y_offset = 13,
     },
+    [SPECIES_HEPTANO] =
+    {
+        .size = MON_COORDS_SIZE(64, 56),
+        .y_offset = 4,
+    },
+    [SPECIES_MALWARAGON] =
+    {
+        .size = MON_COORDS_SIZE(40, 40),
+        .y_offset = 15,
+    },
 };

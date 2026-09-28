@@ -10860,3 +10860,18 @@ static const struct TrainerMonNoItemDefaultMoves sParty_CueBallPaxton[] = {
         .species = SPECIES_MUK,
     },
 };
+
+static const struct TrainerMonNoItemCustomMoves sParty_HeptaNoTest[] = {
+    {
+        .iv = 30,
+        .lvl = 30,
+        .species = SPECIES_HEPTANO,
+        .moves = {MOVE_HYPNORUZATION, MOVE_SHADOW_BALL, MOVE_RECOVER, MOVE_CALM_MIND},
+    },
+    {
+        .iv = 30,
+        .lvl = 30,
+        .species = SPECIES_MALWARAGON,
+        .moves = {MOVE_CLONETA, MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_THIEF},
+    },
+};
