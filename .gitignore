@@ -70,3 +70,5 @@ compile_commands.json
 .porydraw/
 .vs/
 pokefirered.toml
+tools/poryscript
+convert_inc.sh
