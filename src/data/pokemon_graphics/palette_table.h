@@ -412,6 +412,8 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(JIRACHI, gMonPalette_Jirachi),
     SPECIES_PAL(DEOXYS, gMonPalette_Deoxys),
     SPECIES_PAL(CHIMECHO, gMonPalette_Chimecho),
+    SPECIES_PAL(HEPTANO, gMonPalette_HeptaNo),
+    SPECIES_PAL(MALWARAGON, gMonPalette_Malwaragon),
     SPECIES_PAL(EGG, gMonPalette_Egg),
     SPECIES_PAL(UNOWN_B, gMonPalette_Unown),
     SPECIES_PAL(UNOWN_C, gMonPalette_Unown),
@@ -440,6 +442,4 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(UNOWN_Z, gMonPalette_Unown),
     SPECIES_PAL(UNOWN_EMARK, gMonPalette_Unown),
     SPECIES_PAL(UNOWN_QMARK, gMonPalette_Unown),
-    SPECIES_PAL(HEPTANO, gMonPalette_HeptaNo),
-    SPECIES_PAL(MALWARAGON, gMonPalette_Malwaragon),
 };

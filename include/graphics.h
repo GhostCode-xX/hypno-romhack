@@ -2346,6 +2346,18 @@ extern const u32 gMonBackPic_Chimecho[];
 extern const u32 gMonShinyPalette_Chimecho[];
 extern const u8 gMonIcon_Chimecho[];
 extern const u8 gMonFootprint_Chimecho[];
+extern const u32 gMonFrontPic_HeptaNo[];
+extern const u32 gMonPalette_HeptaNo[];
+extern const u32 gMonBackPic_HeptaNo[];
+extern const u32 gMonShinyPalette_HeptaNo[];
+extern const u8 gMonIcon_HeptaNo[];
+extern const u8 gMonFootprint_HeptaNo[];
+extern const u32 gMonFrontPic_Malwaragon[];
+extern const u32 gMonPalette_Malwaragon[];
+extern const u32 gMonBackPic_Malwaragon[];
+extern const u32 gMonShinyPalette_Malwaragon[];
+extern const u8 gMonIcon_Malwaragon[];
+extern const u8 gMonFootprint_Malwaragon[];
 extern const u32 gMonFrontPic_Egg[];
 extern const u32 gMonPalette_Egg[];
 extern const u8 gMonIcon_Egg[];
@@ -4432,20 +4444,6 @@ extern const u8 gMonIcon_Unown_Z[];
 extern const u8 gMonIcon_Unown_ExclamationMark[];
 extern const u8 gMonIcon_Unown_QuestionMark[];
 extern const u8 gMonIcon_QuestionMark[];
-
-extern const u32 gMonFrontPic_HeptaNo[];
-extern const u32 gMonPalette_HeptaNo[];
-extern const u32 gMonBackPic_HeptaNo[];
-extern const u32 gMonShinyPalette_HeptaNo[];
-extern const u8 gMonIcon_HeptaNo[];
-extern const u8 gMonFootprint_HeptaNo[];
-
-extern const u32 gMonFrontPic_Malwaragon[];
-extern const u32 gMonPalette_Malwaragon[];
-extern const u32 gMonBackPic_Malwaragon[];
-extern const u32 gMonShinyPalette_Malwaragon[];
-extern const u8 gMonIcon_Malwaragon[];
-extern const u8 gMonFootprint_Malwaragon[];
 
 // trade
 extern const u16 gTradeMenu_Pal[];

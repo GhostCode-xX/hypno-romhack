@@ -2728,7 +2728,7 @@ const u8 gHeptaNoPokedexTextUnused[] = _("");
 
 const u8 gMalwaragonPokedexText[] = _(
     "Through an alterated Upgrade,\n"
-    "a Porygon2 into this dangerous\n"
-    "artificial variant, it is said to be\n");
+    "a Porygon2 evolved into this\n"
+    "dangerous artificial variant,\n");
 
 const u8 gMalwaragonPokedexTextUnused[] = _("");

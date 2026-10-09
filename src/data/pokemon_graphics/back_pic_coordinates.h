@@ -2060,6 +2060,16 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(32, 56),
         .y_offset = 7,
     },
+    [SPECIES_HEPTANO] =
+    {
+        .size = MON_COORDS_SIZE(48, 48),
+        .y_offset = 9,
+    },
+    [SPECIES_MALWARAGON] =
+    {
+        .size = MON_COORDS_SIZE(56, 48),
+        .y_offset = 10,
+    },
     [SPECIES_EGG] =
     {
         .size = MON_COORDS_SIZE(24, 48),
@@ -2199,16 +2209,6 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = MON_COORDS_SIZE(32, 56),
         .y_offset = 6,
-    },
-    [SPECIES_HEPTANO] =
-    {
-        .size = MON_COORDS_SIZE(48, 48),
-        .y_offset = 9,
-    },
-    [SPECIES_MALWARAGON] =
-    {
-        .size = MON_COORDS_SIZE(56, 48),
-        .y_offset = 10,
     },
 };
 

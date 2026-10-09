@@ -688,6 +688,7 @@ static const u16 sEasyChatWordsByLetter_H[] = {
     EC_WORD_HEHEHE,
     EC_WORD_HELLO,
     EC_MOVE2(HELPING_HAND),
+    EC_POKEMON(HEPTANO),
     EC_WORD_HER,
     -1, 2, // Doubled pokemon species name
     EC_POKEMON2(HERACROSS),
@@ -974,6 +975,7 @@ static const u16 sEasyChatWordsByLetter_M[] = {
     EC_WORD_MAKE,
     EC_WORD_MAKING,
     EC_POKEMON2(MAKUHITA),
+    EC_POKEMON(MALWARAGON),
     EC_WORD_MAN,
     EC_POKEMON2(MANECTRIC),
     EC_POKEMON(MANKEY),
