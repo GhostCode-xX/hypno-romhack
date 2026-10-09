@@ -12,7 +12,7 @@ Route22_TestZone_EventScript_TestHeptaNo::
 	checkflag FLAG_BEAT_HEPTANO_TEST
 	goto_if_eq Route22_TestZone_EventScript_TestHeptaNo_AlreadyDone
 	msgbox Route22_TestZone_Text_TestHeptaNoIntro
-	trainerbattle_no_intro TRAINER_HEPTANO_TEST, Route22_Text_TestHeptaNoDefeat
+	trainerbattle_no_intro TRAINER_HEPTANO_TEST, Route22_TestZone_Text_TestHeptaNoDefeat
 	msgbox Route22_TestZone_Text_TestHeptaNoAfter
 	setflag FLAG_BEAT_HEPTANO_TEST
 	releaseall

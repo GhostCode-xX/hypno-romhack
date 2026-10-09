@@ -7,16 +7,19 @@ MAKEFLAGS += --no-print-directory
 TOOLS_DIR := tools
 TOOL_NAMES := bin2c gbafix gbagfx jsonproc mapjson mid2agb preproc ramscrgen rsfont scaninc wav2agb poryscript
 
+# Only build tool subdirs that actually contain a Makefile.
+# Some tools (like poryscript) are shipped as prebuilt binaries and should not be invoked via `make -C`.
 TOOLDIRS := $(TOOL_NAMES:%=$(TOOLS_DIR)/%)
+MAKEABLE_TOOLDIRS := $(foreach dir,$(TOOLDIRS),$(if $(wildcard $(dir)/Makefile),$(dir)))
 
 # Tool making doesnt require a pokefirered dependency scan.
-RULES_NO_SCAN += tools check-tools clean-tools $(TOOLDIRS)
+RULES_NO_SCAN += tools check-tools clean-tools $(MAKEABLE_TOOLDIRS)
 .PHONY: $(RULES_NO_SCAN)
 
-tools: $(TOOLDIRS)
+tools: $(MAKEABLE_TOOLDIRS)
 
-$(TOOLDIRS):
+$(MAKEABLE_TOOLDIRS):
 	@$(MAKE) -C $@
 
 clean-tools:
-	@$(foreach tooldir,$(TOOLDIRS),$(MAKE) clean -C $(tooldir);)
+	@$(foreach tooldir,$(MAKEABLE_TOOLDIRS),$(MAKE) clean -C $(tooldir);)

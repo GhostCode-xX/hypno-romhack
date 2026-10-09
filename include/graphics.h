@@ -2801,20 +2801,6 @@ extern const u8 gBerryFixWindow_Gfx[];
 extern const u8 gBerryFixWindow_Tilemap[];
 extern const u8 gBerryFixWindow_Pal[];
 
-extern const u32 gMonFrontPic_HeptaNo[];
-extern const u32 gMonPalette_HeptaNo[];
-extern const u32 gMonBackPic_HeptaNo[];
-extern const u32 gMonShinyPalette_HeptaNo[];
-extern const u8 gMonIcon_HeptaNo[];
-extern const u8 gMonFootprint_HeptaNo[];
-
-extern const u32 gMonFrontPic_Malwaragon[];
-extern const u32 gMonPalette_Malwaragon[];
-extern const u32 gMonBackPic_Malwaragon[];
-extern const u32 gMonShinyPalette_Malwaragon[];
-extern const u8 gMonIcon_Malwaragon[];
-extern const u8 gMonFootprint_Malwaragon[];
-
 // item_pc
 extern const u8 gItemPcTiles[];
 extern const u32 gItemPcBgPals[];
