@@ -7469,23 +7469,15 @@ static void Cmd_transformdataexecution(void)
 static void Cmd_replaceset(void)
 {
     s32 i;
-    u8 *battleMonAttacker, *battleMonTarget;
 
     gDisableStructs[gBattlerAttacker].mimickedMoves = 0;
 
     PREPARE_SPECIES_BUFFER(gBattleTextBuff1, gBattleMons[gBattlerTarget].species)
 
-    battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
-    battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
-
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         gBattleMons[gBattlerAttacker].moves[i] = gBattleMons[gBattlerTarget].moves[i];
-
-        if (gBattleMoves[gBattleMons[gBattlerAttacker].moves[i]].pp < 5)
-            gBattleMons[gBattlerAttacker].pp[i] = gBattleMoves[gBattleMons[gBattlerAttacker].moves[i]].pp;
-        else
-            gBattleMons[gBattlerAttacker].pp[i] = 5;
+        gBattleMons[gBattlerAttacker].pp[i] = gBattleMoves[gBattleMons[gBattlerAttacker].moves[i]].pp;
     }
 
     gActiveBattler = gBattlerAttacker;
