@@ -239,6 +239,10 @@
     "NavelRock_Harbor"
   ],
   "gMapGroup_TownsAndRoutes": [
+    "AlpPalletTown",
+    "AlpRoute1",
+    "AlpViridianCity",
+    "AlpRoute22",
     "PalletTown",
     "ViridianCity",
     "PewterCity",

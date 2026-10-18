@@ -1,0 +1,11 @@
+raw `
+AlpPalletTown_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, AlpPalletTown_OnTransition
+	.byte 0
+
+AlpPalletTown_OnTransition::
+	setworldmapflag FLAG_WORLD_MAP_PALLET_TOWN
+
+AlpPalletTown_EventScript::
+	.byte 0
+`

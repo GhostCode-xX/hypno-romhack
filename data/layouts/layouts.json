@@ -722,6 +722,54 @@
       "blockdata_filepath": "data/layouts/RS_SafariZone_RestHouse/map.bin"
     },
     {
+      "id": "LAYOUT_ALP_PALLET_TOWN",
+      "name": "AlpPalletTown_Layout",
+      "width": 32,
+      "height": 32,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PalletTown",
+      "border_filepath": "data/layouts/AlpPalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/AlpPalletTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALP_ROUTE_1",
+      "name": "AlpRoute1_Layout",
+      "width": 32,
+      "height": 64,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PalletTown",
+      "border_filepath": "data/layouts/AlpRoute1/border.bin",
+      "blockdata_filepath": "data/layouts/AlpRoute1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALP_ROUTE_22",
+      "name": "AlpRoute22_Layout",
+      "width": 32,
+      "height": 32,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ViridianCity",
+      "border_filepath": "data/layouts/AlpRoute22/border.bin",
+      "blockdata_filepath": "data/layouts/AlpRoute22/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALP_VIRIDIAN_CITY",
+      "name": "AlpViridianCity_Layout",
+      "width": 32,
+      "height": 32,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_ViridianCity",
+      "border_filepath": "data/layouts/AlpViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/AlpViridianCity/map.bin"
+    },
+    {
       "id": "LAYOUT_PALLET_TOWN",
       "name": "PalletTown_Layout",
       "width": 24,
