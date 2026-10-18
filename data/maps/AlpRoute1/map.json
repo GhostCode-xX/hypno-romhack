@@ -18,6 +18,11 @@
       "map": "MAP_ALP_PALLET_TOWN",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ALP_VIRIDIAN_CITY",
+      "offset": -32,
+      "direction": "up"
     }
   ],
   "object_events": [],
